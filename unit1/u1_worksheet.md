@@ -19,24 +19,26 @@ Using a 0-10 system, rate yourself on how well you think you know each topic in 
 
 |   Skill    | High (8-10) | Mid (4-7) | Low (0-3) | Total |
 | :--------: | :---------: | :-------: | :-------: | :---: |
-|   Linux    |             |           |           |       |
-|  Storage   |             |           |           |       |
-|  Security  |             |           |           |       |
-| Networking |             |           |           |       |
-|    Git     |             |           |           |       |
-| Automation |             |           |           |       |
-| Monitoring |             |           |           |       |
-|  Database  |             |           |           |       |
-|   Cloud    |             |           |           |       |
-| Kubernetes |             |           |           |       |
-|   Total    |             |           |           |       |
+|   Linux    |             |           |     3     |   3   |
+|  Storage   |             |           |     3     |   3   |
+|  Security  |             |           |     3     |   3   |
+| Networking |             |     4     |           |   4   |
+|    Git     |             |           |     3     |   3   |
+| Automation |             |           |     2     |   2   |
+| Monitoring |             |           |     2     |   2   |
+|  Database  |             |     4     |           |   4   |
+|   Cloud    |             |     4     |           |   4   |
+| Kubernetes |             |           |     0     |   0   |
+|   Total    |             |           |           |   28  |
 
 
 Next, answer these questions here:
 
 1. What do you hope to learn in this course?
+ - I hope to learn enough fundamental skills that would help me get a job in the field. I also hope to learn some of the other fields that exists out there that I may not be aware of.
 
 2. What type of career path are you shooting for?
+ - Platform Engineer because Scott said I can watch netflix while doing the job (joking). On a serious note, getting good at building systems that others use sounds rewarding and it seems like in that position you get to learn/know about how many things work at the foundational level.
 
 #### Discussion Post #2
 
