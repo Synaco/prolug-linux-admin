@@ -1,102 +1,105 @@
-**ProLUG 101**
+# Unit 1 Worksheet
 
-**Unit 1 Worksheet**
+## Instructions
 
-Instructions
+---
 
-Fill out this sheet as you progress through the lab and discussions.
-Hold onto all of your work to send to me at the end of the course.
+Fill out the worksheet as you progress through the lab and discussions.
+Hold your worksheets until the end to turn them in as a final submission packet.
 
-Discussion Questions:
+### Resources / Important Links
 
-**[Unit 1 Discussion Post 1]{.underline}**: Using a 0-10 system, rate
-yourself on how well you think you know each topic in the image. (You do
-not have to post this rating). Answer these questions (here):
+- [What is Vim?](https://github.com/vim/vim)
+- [The Linux Foundation](https://www.linux.org/pages/download/)
+- [Linux CLI Cheatsheets](https://www.digitalocean.com/community/tutorials/linux-commands)
 
-- What do you hope to learn in this course?
+#### Discussion Post #1
 
-- What type of career path are you shooting for?
+Using a 0-10 system, rate yourself on how well you think you know each topic in the table below. (You do not have to post this rating).
 
-**[Unit 1 Discussion Post 2:]{.underline}**
+|   Skill    | High (8-10) | Mid (4-7) | Low (0-3) | Total |
+| :--------: | :---------: | :-------: | :-------: | :---: |
+|   Linux    |             |           |           |       |
+|  Storage   |             |           |           |       |
+|  Security  |             |           |           |       |
+| Networking |             |           |           |       |
+|    Git     |             |           |           |       |
+| Automation |             |           |           |       |
+| Monitoring |             |           |           |       |
+|  Database  |             |           |           |       |
+|   Cloud    |             |           |           |       |
+| Kubernetes |             |           |           |       |
+|   Total    |             |           |           |       |
 
-- Post a job that you are interested in from a local job website. (link
-  or image)
 
-- What do you know how to do in the posting?
+Next, answer these questions here:
 
-- What don\'t you know how to do in the posting?
+1. What do you hope to learn in this course?
 
-- What are you doing to close the gap? What can you do to remedy the
-  difference?
+2. What type of career path are you shooting for?
 
-Definitions/Terminology
+#### Discussion Post #2
 
-Kernel --
+1. Post a job that you are interested in from a local job website. (link or image)
 
-OS Version --
+2. What do you know how to do in the posting?
 
-Kernel Args --
+3. What don't you know how to do in the posting?
 
-Modules --
+4. What are you doing to close the gap? What can you do to remedy the difference?
 
-Mount Points --
+<div class="warning">
+Submit your input by following the link below.
 
-Text Editor -
+The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
 
-Notes During Lecture/Class:
+</div>
 
-Links:
+- [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1098309490681598072)
 
-Terms:
-
-Useful tools:
-
-Lab and Assignment
-
-Unit1_ProLUG_LabEssentials - To be completed outside of lecture time
-
-Start thinking about your project ideas (more to come in future weeks):
+### Start thinking about your project ideas (more to come in future weeks):
 
 Topics:
 
-- System Stability
+1. System Stability
+2. System Performance
+3. System Security
+4. System monitoring
+5. Kubernetes
+6. Programming/Automation
 
-- System Performance
+You will research, design, deploy, and document a system that improves your administration of Linux systems in some way.
 
-- System Security
+## Definitions
 
-- System monitoring
+---
 
-- Kubernetes
+Kernel:
 
-- Programming/Automation
+Kernel Args:
 
-> You will research, design, deploy, and document a system that improves
-> your administration of Linux systems in some way.
+OS Version:
 
-Digging Deeper
+Modules:
 
-- Use vimtutor and see how far you get. What did you learn that you did
-  not know about vi/vim?
+Mount Points:
 
-<!-- -->
+Text Editor:
 
-- Go to
-  [[https://vim-adventures.com/]{.underline}](https://vim-adventures.com/)
-  and see how far you get. What did you learn that you did not already
-  know about vi/vim?
+## Digging Deeper
 
-<!-- -->
+---
 
-- Go to
-  [[https://www.youtube.com/watch?v=d8XtNXutVto]{.underline}](https://www.youtube.com/watch?v=d8XtNXutVto)
-  and see how far you get with vim. What did you learn that you did not
-  already know about vi/vim?
+1. Use vimtutor and see how far you get. What did you learn that you did not know about vi/vim?
 
-Reflection Questions
+2. Go to <https://vim-adventures.com/> and see how far you get. What did you learn that you did not already know about vi/vim?
 
-- What questions do you still have about this week?
+3. Go to <https://www.youtube.com/watch?v=d8XtNXutVto> and see how far you get with vim. What did you learn that you did not already know about vi/vim?
 
-<!-- -->
+## Reflection Questions
 
-- How are you going to use what you've learned in your current role?
+---
+
+1. What questions do you still have about this week?
+
+2. How are you going to use what you’ve learned in your current role?
