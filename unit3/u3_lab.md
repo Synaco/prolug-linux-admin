@@ -112,7 +112,7 @@ the name or counting numbers of testfile** because that’s the only way to be
 sure there is not some type of filesystem caching going on to optimize. This
 is especially true in SAN write tests.
 
-## Lab 🧪
+## Lab
 
 ---
 
