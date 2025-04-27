@@ -28,10 +28,14 @@
    - Read `man ps`
 8. `ps -ef`
    - What does this show differently?
+       - It shows all processes and more columns.
 9. `ps -ef | grep -i root`
    - What is the PID of the 4th line?
+       - 4 
 10. `ps -ef | grep -i root | wc -l`
     - What does this show you and why might it be useful?
+        - This shows you the number of processes root user is running.
+        - Useful to see how many processes is normal typically.
 11. `top`
     - Use `q` to exit.
     - Inside top, use `h` to find commands you can use to toggle system info.
@@ -105,8 +109,17 @@
    ```
 
    What does this tell you about your kernel?
+   - Name
+   - Version
+   - Release
+   - Architecture
+   - Install Date
+   - License
+   - Size
    When was the kernel last updated?
+   - Nov 4, 2024
    What license is your kernel released under?
+   - GPL2.0
 
 2. Check the number of disks
    ```bash
@@ -114,10 +127,14 @@
    ls /dev/sd*
    ```
    - When might this command be useful?
+       - It's useful when you want to see the list of disk that exists.
    - What are we assuming about the disks for this to work?
+       - We're assuming the disks are using scsi drivers.
    - How many disks are there on this system?
+       - 4 disks
    - How do you know if it's a partition or a disk?
-
+       - Typically it will have a number at the end (sda1, sda2, etc).
+ 
 ```bash
 pvs # What system are we running if we have physical volumes?
     # What other things can we tell with vgs and lvs?
