@@ -151,7 +151,9 @@ pvs # What system are we running if we have physical volumes?
   ```bash
   iostat -d
   iostat -d 2   # Wait for a while, then use crtl + c to break. What did this do? Try changing this to a different number.
+  # This printed the disk io speeds every 2 seconds.
   iostat -d 2 5 # Don't break this, just wait. What did this do differently? Why might this be useful?
+  # This did the same thing as above but stopped after 5 outputs.
   ```
 
 3. Check the amount of RAM
@@ -163,6 +165,9 @@ pvs # What system are we running if we have physical volumes?
    ```
 
    - What do each of these commands show you? How are they useful?
+       - Prints out detailed info about memory usage on the system.
+       - Shows you used/free memory available on a system.
+       - Shows the same thing but in mebibytes.
 
 4. Check the number of processors and processor info
    ```bash
