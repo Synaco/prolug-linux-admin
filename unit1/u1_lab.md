@@ -395,4 +395,3 @@ The first character lets you know if the file is a directory, file, or link. In 
 
 Go find some other interesting files or directories and see what you see there. Can you identify their characteristics and permissions?
 
-> Be sure to `reboot` the lab machine from the command line when you are done.
