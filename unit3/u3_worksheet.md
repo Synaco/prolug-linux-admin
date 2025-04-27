@@ -1,9 +1,4 @@
-<div class="flex-container">
-        <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64">
-    <p>
-        <h1>Unit 3 Worksheet - LVM and Raid</h1>
-    </p>
-</div>
+# Unit 3 Worksheet
 
 ## Instructions
 
@@ -17,28 +12,6 @@ Hold your worksheets until the end to turn them in as a final submission packet.
 - [Google SRE Book - Implementing SLOs](https://sre.google/workbook/implementing-slos/)
 - [AWS High Availability Architecture Guide](https://docs.aws.amazon.com/pdfs/whitepapers/latest/real-time-communication-on-aws/real-time-communication-on-aws.pdf)
 - [Red Hat High Availability Cluster Configuration](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/configuring_and_managing_high_availability_clusters/index)
-
-#### Downloads
-
-The worksheet has been provided below. The document can be transposed to
-the desired format so long as the content is preserved. For example, the `.txt`
-could be transposed to a `.md` file.
-
-- <a href="./assets/downloads/u3/u3_worksheet.txt" target="_blank" download>📥 u3_worksheet(`.txt`)</a>
-- <a href="./assets/downloads/u3/u3_worksheet.docx" target="_blank" download>📥 u3_worksheet(`.docx`)</a>
-
-### Unit 3 Recording
-
-<iframe
-    style="width: 100%; height: 100%; border: none;
-    aspect-ratio: 16/9; border-radius: 1rem; background:black"
-    src="https://www.youtube.com/embed/NYL85ndQLbc"
-    title="Unit 1 Recording - ProLUG Linux Systems Administration Course - Free in Discord"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-</iframe>
 
 #### Discussion Post #1
 
@@ -55,15 +28,6 @@ Ask Google, find a blog, or ask an AI about high availability. (Here's one if yo
 
 1. What are some important terms you read about? Why do you think understanding
    HA will help you better in the context of triaging incidents?
-
-<div class="warning">
-Submit your input by following the link below.
-
-The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
-
-</div>
-
-- [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1098309490681598072)
 
 ## Definitions
 

@@ -1,12 +1,4 @@
-<div class="flex-container">
-        <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64"></img>
-    <p>
-        <h1>Unit 3 Lab - LVM and Raid</h1>
-    </p>
-</div>
-
-> If you are unable to finish the lab in the ProLUG lab environment we ask you `reboot`
-> the machine from the command line so that other students will have the intended environment.
+# Unit 3 Lab
 
 ### Resources / Important Links
 
@@ -18,13 +10,6 @@
 - Rocky 9.4+ - ProLUG Lab
   - Or comparable Linux box
 - root or sudo command access
-
-#### Downloads
-
-The lab has been provided for convenience below:
-
-- <a href="./assets/downloads/u3/u3_lab.pdf" target="_blank" download>📥 u3_lab(`.pdf`)</a>
-- <a href="./assets/downloads/u3/u3_lab.docx" target="_blank" download>📥 u3_lab(`.docx`)</a>
 
 ## Pre-Lab Warm-Up
 
@@ -500,4 +485,3 @@ Can you use the internet/man pages/or other documentation to take this raid down
 
 Can you document your steps so that you or others could come back and do this process again?
 
-> Be sure to `reboot` the lab machine from the command line when you are done.
