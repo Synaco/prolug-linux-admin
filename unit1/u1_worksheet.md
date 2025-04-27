@@ -50,23 +50,23 @@ Next, answer these questions here:
 
 3. What don't you know how to do in the posting?
 
-- Kubernetes & Rancher
-- VMWare
-- DevSecOps & Automation
-- Programming (Powershell, Python, Ruby)
-- Git
-- CI/CD (Azure DevOps, Jenkins, Harness)
-- Cloud (AWS)
-- SQL & Oracle Technologies
-- Redhat Openshift
-- Terraform/Atlantis
-- AWS Cloud (Fargate, ECS, Lambdas, ApiGateways, EC2, S3, ALB/ELB, Elasticache, EKS, KMS-Secret Manager, VPCs, IAM)
-- Logging/Monitoring/Alerting (Cloudwatch/Splunk/AppDynamics/Elasticache/Grafana)
-- Rundeck, Chef, Ansible, Vault, AWX, Azure DevOps
-- MessageQueueing: RabbitMQ, PubSub
-- OpenShift, Kubernetes
-- Load balancers, Akamai
-- Languages: Go/Python/ Node.js (Angular.js framework)/Java (Spring MVC)
+    - Kubernetes & Rancher
+    - VMWare
+    - DevSecOps & Automation
+    - Programming (Powershell, Python, Ruby)
+    - Git
+    - CI/CD (Azure DevOps, Jenkins, Harness)
+    - Cloud (AWS)
+    - SQL & Oracle Technologies
+    - Redhat Openshift
+    - Terraform/Atlantis
+    - AWS Cloud (Fargate, ECS, Lambdas, ApiGateways, EC2, S3, ALB/ELB, Elasticache, EKS, KMS-Secret Manager, VPCs, IAM)
+    - Logging/Monitoring/Alerting (Cloudwatch/Splunk/AppDynamics/Elasticache/Grafana)
+    - Rundeck, Chef, Ansible, Vault, AWX, Azure DevOps
+    - MessageQueueing: RabbitMQ, PubSub
+    - OpenShift, Kubernetes
+    - Load balancers, Akamai
+    - Languages: Go/Python/ Node.js (Angular.js framework)/Java (Spring MVC)
 
 4. What are you doing to close the gap? What can you do to remedy the difference?
 
