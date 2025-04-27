@@ -48,7 +48,7 @@ date +%e
 date +%C
 ```
 
-## Lab 🧪
+## Lab 
 
 ---
 
@@ -370,10 +370,6 @@ ls -l
 | -rw-r--r--. |     1      |   Root    |    root     |    58    |      Jun       |      22      |     08:52     | datefile  |
 
 The primary permissions commands we’re going to use are going to be chmod (access) and chown (ownership).
-
-A quick rundown of how permissions break out:
-
-<img src='./assets/images/permissions.png'></img>
 
 Let’s examine some permissions and see if we can’t figure out what permissions are allowed.
 
