@@ -139,7 +139,7 @@ I finished Lesson 7.
 
 2. Go to <https://vim-adventures.com/> and see how far you get. What did you learn that you did not already know about vi/vim?
 
-I got to level 3.  But I got bored.  I prefer actually just typing and editing files.
+ - I got to level 3.  But I got bored.  I prefer actually just typing and editing files.
 
 3. Go to <https://www.youtube.com/watch?v=d8XtNXutVto> and see how far you get with vim. What did you learn that you did not already know about vi/vim?
 
