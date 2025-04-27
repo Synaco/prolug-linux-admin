@@ -17,15 +17,21 @@ Hold your worksheets until the end to turn them in as a final submission packet.
 Think about how week 1 went for you.
 
 1. Do you understand everything that needs to be done?
+- Not in time, no. But I'm working on catching up. I'm a bit of a slow learner and have greatly underestimated the time it takes me to try and process the information.
 
 2. Do you need to allocate more time to the course, and if so, how do you plan to do it?
+- I've been running behind on the course already, so I definitely need to allocate more time.  I plan on allocating 1-2hrs a day after work with the main goal being finishing the course work and then diving deeper if I accomplish the tasks before the end of the week.  My biggest problem is spending hours in a rabbit hole and not finishing or focusing on the course work in time.
 
 3. How well did you take notes during the lecture? Do you need to improve this?
+- When in any live lecture I tend to struggle with taking notes. I don't know what's important enough to write down and what to leave out so I end up trying to write every little thing down. I consider this to be a problem because this leads me to lose the forest for the trees. I think what I'm going to do moving forward is just take notes on key phrases that I've never heard before that I can look up later this way I'm not too bogged down and can listen/process the information in real time better.
 
 #### Unit 2 Discussion Post #2
 
 Read a blog, check a search engine, or ask an AI about SELinux.  
 What is the significance of contexts? What are the significance of labels?
+- SELinux checks the context of a subject (process or application) or object (file) and determines whether or not something has permissions to access.
+- SELinux uses a labeling system. All files, processes, ports in a system will have an SELinux label associated with them. The label contains the user, role, type, and level. It uses this info when making decisions to allow/deny access to objects. I specifically read about the "type" portion of the label where it enforces policies based on type (aka Type Enforcement).
+
 
 Scenario:
 
@@ -40,8 +46,27 @@ Scenario:
 > how these users are accessing it.
 
 
-What do you do?  
-Where do you check?
+What do you do? Where do you check?  
+```text
+1. Check to see if/how selinux is configured by running command:
+
+grep -i ^selinux /etc/selinux/config
+
+2. If SELinux is running in "enforced" mode, I would then check the logs
+   to see if I can see a "deny" message when attempting to login:
+
+grep -i avc /var/log/messages
+grep -i avc /var/log/audit/audit.log
+
+3. I would check user mappings too and compare the settings for the
+   users that do work against the user that does not.
+
+semanage login -l
+
+4. If everything is fine regarding selinux, I'd check to make sure the 
+   user itself was created properly.
+```
+
 
 You may use any online resources to help you answer this. This is not a trick
 and it is not a “one answer solution”. This is for you to think through.
