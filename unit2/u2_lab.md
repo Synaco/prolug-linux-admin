@@ -24,30 +24,52 @@ ls
 mkdir evaluation
 mkdir evaluation/test/round6
 # This fails, can you find out why?
+# Answer: It fails because the directory "test" doesn't exist.
 
 mkdir -p evaluation/test/round6
 # This works, think about why?
+# Answer: The -p parameter has mkdir make any parent directory that doesn't exist.
 
 cd evaluation
 pwd
 # What is the path you are in?
+# Answer: /root/evaluation
 
 touch testfile1
 ls
 # What did this do?
+# It created a file called "testfile1".
 
 touch testfile{2..10}
 ls
 # What did this do differently than earlier?
+# Answer: It created a list of files from testfile2 all the way through testfile10
 # touch .hfile .hfile2 .hfile3
 
 ls
 # Can you see your newest files? Why or why not? (man ls)
+# Answer: No you can't see the newer files because they are hidden.
 # What was the command to let you see those hidden files?
+# ls -a
 
 ls -l
 # What do you know about this long listing? Think about 10 things this can show you.
+# Answer: 
+# It'll show me:
+# 
+# 1. Whether the file is a directory or a file
+# 2. Owner Read, Write, Execute permissions
+# 3. Group Read, Write, Execute permissions
+# 4. Everyone elses Read, Write, Execute Permissions
+# 5. The UID of the owner
+# 6. The GID of the group
+# 7. The file size in bytes
+# 8. The number of links the file/directory has
+# 9. The created month of the file/directory
+# 10. The modified time of the the file/directory
+#
 # Did it show you all the files or are some missing?
+# Answer: Some are missing.  Would need to run "ls -al" to get the hidden files as well.
 ```
 
 ## Lab 
@@ -64,12 +86,17 @@ It is recommended that you type these commands and do not copy and paste them. W
 hostname
 cat /etc/*release
 # What do you recognize about this output? What version of RHEL (CENTOS) are we on?
+# Answer: The hostname is the same name as the OS. Version 9.5.
 
 uname
 uname -a
 uname -r
 
 # man uname to see what those options mean if you don’t recognize the values
+# Answer:
+# uname - prints system info
+# uname -a - prints all system info
+# uname -r - prints kernel release
 ```
 
 #### Check the amount of RAM:
@@ -80,6 +107,10 @@ free
 free -m
 
 # What do each of these commands show you? How are they useful?
+# Answer: 
+# /proc/meminfo shows all information about the memory on the system.
+# free command shows free/used memory on the system.
+# free command with the -m parameter shows the same info but in "mebibytes".
 ```
 
 #### Check the number of processors and processor info:
@@ -87,9 +118,10 @@ free -m
 ```bash
 cat /proc/cpuinfo
 # What type of processors do you have? How many are there? (counting starts at 0)
-
+# Answer: Intel processors and there's two.
 cat /proc/cpuinfo | grep proc | wc -l
 # Does this command accurately count the processors?
+# Answer: I'd say it does.
 ```
 
 #### Check Storage usage and mounted filesystems:
@@ -102,10 +134,17 @@ df -h
 df -h | grep -i var
 # What does this show, or search for? Can you invert this search? (hint `man grep`
 # look for invert or google “inverting grep’s output”)
+# Answer: It shows the file system disk usage and formats it in human-readable
+# format. The second command searches for anything containing "var".
+# 
+# To invert the search pattern in grep, just ad the -v parameter.
+
 
 df -h | grep -i sd
 # This one is a little harder, what does this one show? Not just the line, what are
 # we checking for? (hint if you need it, google “what is /dev/sda in linux”)
+# Answer: We're checking to see block devices attached to the system. 
+
 
 mount
 # Mount by itself gives a huge amount of information. But, let’s say someone is asking
@@ -142,6 +181,8 @@ uptime
 man uptime
 # Read the man for uptime and figure out what those 3 numbers represent.
 # Referencing this server, do you think it is under high load? Why or why not?
+# Answer: The 3 numbers represent the system load time for the last 1, 5, 15
+# minutes. The server I'm on has 0, 0, 0 so it's not under any load.
 ```
 
 #### Check who has recently logged into the server and who is currently in:
@@ -153,11 +194,18 @@ last
 
 last | more
 # Were you the last person to log in? Who else has logged in today?
+# Answer: It just shows root.  I don't think I was the last person to login today
+# but I only see root logged in in the past.
 
 w
 who
 whoami
 # how many other users are on this system? What does the pts/0 mean on google?
+# Answer: No one else at the moment. PTS connections are ssh or telnet connections
+# to the system. So pts/0 means I'm connected via ssh, in this case, and
+# am the only one connected. If another user remotes in, it would show
+# pts/1 for them and the number increments based on number of connected
+# parties.
 ```
 
 #### Check who you are and what is going on in your environment:
@@ -214,7 +262,9 @@ while true; do free -t | egrep "Mem|Swap" | awk '{print $1 " Used Space = " ($3 
 ```bash
 seq 1 10
 # What did this do?
+# Answer: printed to the terminal the numbers 1 through 10.
 # Can you man seq to modify that to count from 2 to 20 by 2’s?
+# Answer: seq 2 2 20
 # Let’s make a counting for loop from that sequence
 
 for i in `seq 1 20`; do echo "I am counting i and am on $i times through the loop"; done
@@ -222,3 +272,9 @@ for i in `seq 1 20`; do echo "I am counting i and am on $i times through the loo
 
 Can you tell me what is the difference or significance of the $ in the command above? What does that denote to the system?
 
+```text
+It tells the shell to use the value of i in the sentence. In the for
+loop, i gets the value of the sequence numbers for every sequence of the
+loop. So for the first time running the loop i is equal to 1. Then the
+second time it's equal to 2, etc etc.
+```
