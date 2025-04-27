@@ -88,21 +88,29 @@ You will research, design, deploy, and document a system that improves your admi
 
 ---
 
-Uptime:
+Uptime  
+- A measurement of a systems reliability. Defines the period of time a machine has been working and available.
 
-Standard input (stdin):
+Standard input (stdin)  
+- Stdin is the data that comes into the command.
 
-Standard output (stdout):
+Standard output (stdout)  
+- Stdout is the output of the command.
 
-Standard error (stderr):
+Standard error (stderr)  
+- Stderr is any errors that come out from the command.
 
-Mandatory Access Control (MAC):
+Mandatory Access Control (MAC)  
+- Security policy where access to objects are restricted based on the identity of the subject and it's defined attributes.
 
-Discretionary Access Control (DAC):
+Discretionary Access Control (DAC)  
+- Security policy where access to objects are restricted based on the subject's identity or group. This is more flexible then MACs.
 
-Security contexts (SELinux):
+Security contexts (SELinux)  
+- Users, files, processes, and applications have additional information that allow SELinux to make access control decisions. These are known as Security Contexts. The information are user, role, type, and level.
 
-SELinux operating modes:
+SELinux operating modes  
+- SELinux has to modes when enabled: permissive, enforcing. When in permissive mode the policies won't be enforced and will only log avc messages. When set to enforcing, it will both enforce the policies and log the messages.
 
 ## Digging Deeper
 
@@ -115,10 +123,14 @@ SELinux operating modes:
 2. Investigate a troubleshooting methodology, by either Google or AI search.
    Does the methodology fit for you in an IT sense, why or why not?
 
+[Troubleshooting Methods](https://www.learnleansigma.com/problem-solving/5-problem-solving-methods/)
+
 ## Reflection Questions
 
 ---
 
 1. What questions do you still have about this week?
+- I'm still wrapping my head around SELinux and labels and contexts. I want to make/do a lab where I play around with setting permissions for a user and trigger deny's to see the messages in logs.
 
 2. How are you going to use what you’ve learned in your current role?
+- I've never really had a structured way of trying to troubleshoot something. I just intuitively try to solve a problem based on what I know and trying to figure out what I don't know. But I'm going to actively try to apply one of the methodologies for troubleshooting over time and see which one works best for me. I like the idea of having an outlined repeatable method of doing things, especially troubleshooting.
