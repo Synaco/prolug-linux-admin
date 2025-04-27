@@ -38,7 +38,7 @@ pwd
 touch testfile1
 ls
 # What did this do?
-# It created a file called "testfile1".
+# Answer: It created a file called "testfile1".
 
 touch testfile{2..10}
 ls
