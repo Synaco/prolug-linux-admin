@@ -43,10 +43,30 @@ Next, answer these questions here:
 #### Discussion Post #2
 
 1. Post a job that you are interested in from a local job website. (link or image)
+ - https://www.indeed.com/jobs?q=platform+engineer&latLong=28.30468%2C-81.41667&locString=Kissimmee%2C+FL%2C+34744&radius=25&start=10&vjk=bd3f58e78acd124a
 
 2. What do you know how to do in the posting?
+ - Nothing.  But I see I'm actively working on some of the items listed.
 
 3. What don't you know how to do in the posting?
+
+- Kubernetes & Rancher
+- VMWare
+- DevSecOps & Automation
+- Programming (Powershell, Python, Ruby)
+- Git
+- CI/CD (Azure DevOps, Jenkins, Harness)
+- Cloud (AWS)
+- SQL & Oracle Technologies
+- Redhat Openshift
+- Terraform/Atlantis
+- AWS Cloud (Fargate, ECS, Lambdas, ApiGateways, EC2, S3, ALB/ELB, Elasticache, EKS, KMS-Secret Manager, VPCs, IAM)
+- Logging/Monitoring/Alerting (Cloudwatch/Splunk/AppDynamics/Elasticache/Grafana)
+- Rundeck, Chef, Ansible, Vault, AWX, Azure DevOps
+- MessageQueueing: RabbitMQ, PubSub
+- OpenShift, Kubernetes
+- Load balancers, Akamai
+- Languages: Go/Python/ Node.js (Angular.js framework)/Java (Spring MVC)
 
 4. What are you doing to close the gap? What can you do to remedy the difference?
 
