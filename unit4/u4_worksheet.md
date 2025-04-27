@@ -74,23 +74,32 @@ You may use AI for this, but let us know if you do.
 
 ---
 
-Detection:
+Detection  
+- The process of identifying potential unauthorized or malicious activity occurring on a fleet of systems or network.
 
-Response:
+Response  
+- Actions taken after a security incident (or percieved incident) has been detected. 
 
-Mitigation:
+Mitigation  
+- Actions taken to minimize the risk or impact of a security incident.
 
-Reporting:
+Reporting  
+- The process of documenting and relaying information about a security incident.
 
-Recovery:
+Recovery  
+- Restoring systems to their original state.
 
-Remediation:
+Remediation  
+- Fixing the root cause of the problem so that the incident or issue doesn't happen again.
 
-Lessons Learned:
+Lessons Learned  
+- The information you've learned during and after an incident.
 
-After action review:
+After Action Review  
+- Structured process to analyze and learn from a security incident.
 
-Operations Bridge:
+Operations Bridge  
+- A system/software that actively monitors system information in real time.
 
 ## Digging Deeper
 
@@ -107,7 +116,9 @@ Operations Bridge:
 ---
 
 1. What questions do you still have about this week?
+- What does an actual plan look like? I'm curious to see an org that not only has an incident response plan but actually has a normal routine for practicing it.
 
 2. How much better has your note taken gotten since you started?
    What do you still need to work on? Have you started using a different tool?
    Have you taken more notes?
+- It's going pretty well. I keep notes on keywords that I don't know about in the live sessions and then I look them up after when I have time. I have taken more notes.

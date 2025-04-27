@@ -30,12 +30,13 @@ echo “this is a string of text” > somefile
 
 cat somefile
 # How many lines are there?
-
+# Answer: 1
 Echo “this is a string of text” >> somefile
 # Repeat 3 times
 
 cat somefile
 # How many lines are there?
+# Answer: 4 
 
 # cheat with `cat somefile | wc -l`
 echo “this is our other test text” >> somefile
@@ -43,6 +44,7 @@ echo “this is our other test text” >> somefile
 
 cat somefile | nl
 # How many lines are there?
+# Answer: 7
 
 cat somefile | nl | grep test
 # compare that with 14
@@ -158,6 +160,12 @@ are allocated. Why do you think there is no output from these commands the
 first time you run them? Try these next commands to see if you can figure out
 what is happening? To see more in depth information try pvdisplay, vgdisplay,
 and lvdisplay.
+
+```text
+Answer:
+
+
+```
 
 If there is still no output, it’s because this system is not configured for LVM.
 You will notice that none of the disk you verified are attached are allocated to
@@ -483,5 +491,14 @@ There is no procedure in this lab for breaking down this MDADM RAID.
 You are root/administrator on your machine, and you do not care about the data on this RAID.
 Can you use the internet/man pages/or other documentation to take this raid down safely and clear those disks?
 
+```text
+Answer:
+
+
+```
 Can you document your steps so that you or others could come back and do this process again?
 
+```text
+Answer:
+
+```
