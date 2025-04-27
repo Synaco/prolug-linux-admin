@@ -1,12 +1,10 @@
 **Unit 1 Lab - Essential Tools Files, Redirects, and Permissions**
 
-## **[Required Materials]**
+## **Required Materials**
 
-Putty or other connection tool
-
-Lab Server
-
-Root or sudo command access
+ - Putty or other connection tool
+ - Lab Server
+ - Root or sudo command access
 
 **EXERCISES (Warmup to quickly run through your system and familiarize
 yourself)**
