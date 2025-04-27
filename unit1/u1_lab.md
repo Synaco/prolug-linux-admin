@@ -1,6 +1,6 @@
 **Unit 1 Lab - Essential Tools Files, Redirects, and Permissions**
 
-**[Required Materials]{.underline}**
+## **[Required Materials]**
 
 Putty or other connection tool
 
