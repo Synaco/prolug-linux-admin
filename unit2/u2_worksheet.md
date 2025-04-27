@@ -35,9 +35,9 @@ Scenario:
 > When you review the differences in the servers you see that the server they
 > cannot access is running SELINUX. On checking other users have no problem
 > getting into the system.
-
-You find nothing in the documentation (typical) about this different system or
-how these users are accessing it.
+> 
+> You find nothing in the documentation (typical) about this different system or
+> how these users are accessing it.
 
 
 What do you do?  
