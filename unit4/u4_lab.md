@@ -1,12 +1,4 @@
-<div class="flex-container">
-        <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64">
-    <p>
-        <h1>Unit 4 Lab - Operating Running Systems</h1>
-    </p>
-</div>
-
-> If you are unable to finish the lab in the ProLUG lab environment we ask you `reboot`
-> the machine from the command line so that other students will have the intended environment.
+# Unit 4 Lab
 
 ### Resources / Important Links
 
@@ -19,13 +11,6 @@
 - Rocky 9.4+ - ProLUG Lab
   - Or comparable Linux box
 - root or sudo command access
-
-#### Downloads
-
-The lab has been provided for convenience below:
-
-- <a href="./assets/downloads/u4/u4_lab.pdf" target="_blank" download>📥 u4_lab(`.pdf`)</a>
-- <a href="./assets/downloads/u4/u4_lab.docx" target="_blank" download>📥 u4_lab(`.docx`)</a>
 
 ## Pre-Lab Warm-Up
 
@@ -94,7 +79,7 @@ The lab has been provided for convenience below:
    # If it's not, install it so you can use vimtutor later (if you need help with vi commands)
    ```
 
-## Lab 🧪
+## Lab 
 
 ---
 
@@ -403,5 +388,3 @@ here, I'd liken to showing you around a tool box. Nothing here is terribly usefu
 from knowing the tool exists and then being able to properly apply it to the problem at hand.
 
 I hope you enjoyed this lab.
-
-> Be sure to `reboot` the lab machine from the command line when you are done.
