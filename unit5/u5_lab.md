@@ -1,12 +1,4 @@
-<div class="flex-container">
-        <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64">
-    <p>
-        <h1>Unit 5 Lab - Managing Users and Groups</h1>
-    </p>
-</div>
-
-> If you are unable to finish the lab in the ProLUG lab environment we ask you `reboot`
-> the machine from the command line so that other students will have the intended environment.
+# Unit 5 Lab
 
 ### Resources / Important Links
 
@@ -20,13 +12,6 @@
 - Rocky 9.4+ - ProLUG Lab
   - Or comparable Linux box
 - root or sudo command access
-
-#### Downloads
-
-The lab has been provided for convenience below:
-
-- <a href="./assets/downloads/u5/u5_lab.pdf" target="_blank" download>📥 u5_lab(`.pdf`)</a>
-- <a href="./assets/downloads/u5/u5_lab.docx" target="_blank" download>📥 u5_lab(`.docx`)</a>
 
 ## Pre-Lab Warm-Up
 
@@ -68,7 +53,7 @@ We just put the aliases back.
 17. `alias ls='ls --color=auto'`
     - Test with `alias` to see them added and also use `ll` and `ls` to see them work properly.
 
-## Lab 🧪
+## Lab
 
 ---
 
@@ -362,10 +347,6 @@ ls -l
 
 The primary permissions commands we're going to use are going to be `chmod` (access) and `chown` (ownership).
 
-A quick rundown of how permissions break out:
-
-<img src='./assets/images/permissions.png'></img>
-
 Let's examine some permissions and see if we can't figure out what permissions are allowed:
 
 ```bash
@@ -391,4 +372,3 @@ The first character lets you know if the file is a directory, file, or link. In 
 Go find some other interesting files or directories and see what you see there.  
 Can you identify their characteristics and permissions?
 
-> Be sure to `reboot` the lab machine from the command line when you are done.
