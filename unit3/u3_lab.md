@@ -164,7 +164,9 @@ and lvdisplay.
 ```text
 Answer:
 
-
+The system isn't currently using lvm, and that's why nothing comes up.
+Nothing comes up either when I run the commands: pvdisplay, vgdisplay,
+lvdisplay.
 ```
 
 If there is still no output, it’s because this system is not configured for LVM.
