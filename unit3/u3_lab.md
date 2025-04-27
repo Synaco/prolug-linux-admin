@@ -493,14 +493,24 @@ There is no procedure in this lab for breaking down this MDADM RAID.
 You are root/administrator on your machine, and you do not care about the data on this RAID.
 Can you use the internet/man pages/or other documentation to take this raid down safely and clear those disks?
 
-```text
-Answer:
-
-
-```
 Can you document your steps so that you or others could come back and do this process again?
 
-```text
-Answer:
+```bash
+# I would comment out the line I added in /etc/fstab:
+# /dev/mapper/VOlGroupTest-lv_test /space xfs defaults 0 0
+vi /etc/fstab
 
+# unmount the device
+umount /dev/md0
+
+# Stop the raid device
+mdadm --stop /dev/md0
+
+# Overwrite the block devices with zeroes
+# The devices specified are the devices that were used
+for disk in b c e; do mdadm --zero-superblock /dev/xvd$disk; done
+
+# Then remove the entry for the raid array in
+# /etc/mdadm.conf
+vi /etc/madm.conf
 ```
