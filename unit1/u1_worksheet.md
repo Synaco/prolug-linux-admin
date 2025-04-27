@@ -70,6 +70,10 @@ Next, answer these questions here:
 
 4. What are you doing to close the gap? What can you do to remedy the difference?
 
+To close the gap, I'm currently:
+* Taking this linux administration course.
+* Taking the security engineering course.
+* Started learning some python and git to upload scripts to github
 
 ### Start thinking about your project ideas (more to come in future weeks):
 
@@ -89,16 +93,23 @@ You will research, design, deploy, and document a system that improves your admi
 ---
 
 Kernel:
+ - The program on a computer that has complete control over the system.  It's the middleman between applications/software you run on the system and the hardware resources like memory, cpu, and peripherals.
 
 Kernel Args:
+ - Parameters that you can pass to modify kernel behavior.
 
 OS Version:
+ - Version of the installed system software.  Each OS has it's own way of releasing updates and naming convention that can be looked up.
 
 Modules:
+ - Kernel Modules are pieces of code that can be loaded and used that extend the functionality of the kernel.  Typically modules that are created revolve around device drivers, file system drivers, and system calls.
 
 Mount Points:
+ - A directory in linux that storage devices and file systems get attached.
 
 Text Editor:
+ - Program that can edit plan text files.
+
 
 ## Digging Deeper
 
@@ -106,7 +117,29 @@ Text Editor:
 
 1. Use vimtutor and see how far you get. What did you learn that you did not know about vi/vim?
 
+I finished Lesson 7.
+    - I did not know that I can press "A" to start modifying at the end of a line.  I only knew about "i" and "a".
+    - I did not know that I can delete a character using "x".  I only knew about pressing "d" and then a direction.
+    - I did not think to use "d$" to delete to end of line.
+    - I did not think to use "dw" to delete an entire word.
+    - "e" means to the end of the current word including the last character.
+    - I knew I can use "u" to undo but I didn't know about "U" or "ctrl-r"
+    - There's a difference between yanking with "y" and pasting with "p" than to use "dd" and then type "p" to paste.  For one it's called "put" and it inserts what you deleted in the vim register and when you use it puts the line below where the cursor is currently at.
+    - I can use "ce" to edit to the end of a word.  "cc" change entire line.
+    - "ctrl-G" gives me line number and file name, then I can type "number-G" to go back to that line number
+    - In normal mode I can type ":help [command]" and it'll open the help file where the command is referenced.
+    - Use "?" instead of "/" to search in reverse
+    - "ctrl-o" goes back to where your cursor was previosly while "ctrl-i" goes forward
+    - Substitute Command:
+      - `":s/old/new"` - changes the first instance of "new" to "old"
+      - `":s/old/new/g"` - changes all instances of "new" to "old" on the current line
+      - `":1,4s/old/new/g"` - changes all instances of "new" to "old" on line number 1-4
+      - `":%s/old/new/g"` - changes all instances of "new" to "old" in the entire file
+      - `":%s/old/new/gc"` - changes all instances of "new to "old" in the entire file but asks you first for each instance
+
 2. Go to <https://vim-adventures.com/> and see how far you get. What did you learn that you did not already know about vi/vim?
+
+I got to level 3.  But I got bored.  I prefer actually just typing and editing files.
 
 3. Go to <https://www.youtube.com/watch?v=d8XtNXutVto> and see how far you get with vim. What did you learn that you did not already know about vi/vim?
 
@@ -115,5 +148,7 @@ Text Editor:
 ---
 
 1. What questions do you still have about this week?
+ - I have a lot to learn.  How long would it take me to be decent at all the different technologies?
 
 2. How are you going to use what you’ve learned in your current role?
+ - I will practice using vim to write documentation and notes. 
