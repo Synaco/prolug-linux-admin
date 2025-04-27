@@ -28,7 +28,11 @@ touch testfile{2..10}
 ls
 
 # What does this do differently?
+# Answer:  It creates testfile2 through testfile10 versus just creating one file.
+
 # Can you figure out what the size of those files are in bytes? What command did you use?
+# Answer:  The size of the files are 0 bytes.  I used the command "ls -lh" to see
+# the list.
 
 touch file.`hostname`
 touch file.`hostname`.`date +%F`
@@ -36,6 +40,10 @@ touch file.`hostname`.`date +%F`.`date +%s`
 ls
 
 # What do each of these values mean? `man date` to figure those values out.
+# Answer: The first command will create a file with the hostname of the machine.
+# The second command will create the same thing, but appends the date in
+# YYYY-mm-dd format. The third command will create the same thing as the
+# second command but it will append the seconds since epoch time.
 
 # Try to set the following values in the file
 
@@ -143,6 +151,8 @@ difference between cp and mv? Read the manuals for cp and mv to see if
 there’s anything that may be useful to you. For most of us -r is tremendously
 useful option for moving directories.
 
+- For mv I think the -n could be helpful to make sure you don't accidently overwrite a file.  You can also use the -n for cp command. 
+
 #### Searching/filtering through files:
 
 ```bash
@@ -166,6 +176,8 @@ Can you figure out why that worked? What do you think the ^ does?
 Anchoring is a common term for this. See if you can find what anchors
 to the end of a string.
 
+- We used basic regular expression by using the ^ to say, "give me everything that starts with the characters apple". If we wanted to do the same thing but find the word apple at the end of a string, you would do something like "cat fruits.txt | grep -i "apple$".
+
 #### Sorting files with sort:
 
 ```bash
@@ -178,6 +190,10 @@ cat fruits.txt
 # Did the sort output come out different than the cat output? Did sorting
 # your file do anything to your original data? So let’s sort our data again
 # and figure out what this command does differently
+# Answer: Yes. It sorted everything alphebetically when running "sort fruits.txt",
+# but it didn't change the actual data in the file itself. It only sorted
+# the stdout.
+
 
 sort -k 2 fruits.txt
 
@@ -216,6 +232,8 @@ Read man to see why that works. Why do you suppose that it needs to be reversed
 to have the highest numbers at the top? What is the difference, if you can see any,
 between using the -n or not using it? You may have to use head -40 to figure that
 out, depending on your processes running.
+
+- When sorting, to see the highest number first you have to reverse because by default it'll sort in order (0,1,2,3...etc). I tried seeing the difference between running with -n and not but I can't see a difference even with the "head -40". Based on man page it sorts by numerical value of the string provided.
 
 Read man ps to figure out what other things you can see or sort by from the ps command.
 We will examine that command in detail in another lab.
@@ -267,6 +285,28 @@ See if you can figure out what each of those commands do.
 Read the manual `man command` for any command you don’t recognize.
 Use something you learned to affect the output.
 
+```text
+1. "cat fruits.txt" outputs the contents of the file.
+2. Piping that output to grep where you filter for content that contains
+   the word "apple".
+3. Piping that output and sorting it which will sort the contents
+   alphebetically.
+4. Piping that to "nl" which adds line numbers to the beginning of each
+   line.
+5. Piping that to the awk command which is just printing the column
+   specified, which in the above case is the first column.
+6. Piping that into sort again but we are using the -r parameter to sort
+   in reverse order.
+
+Using what I learned I ran this command:
+
+cat fruits.txt | sort -k 2 -r | nl
+
+This get's me the fruits in the text file in order of the number after
+the fruit name and then adds line numbers in the beginning.
+```
+
+
 #### Throwing the output into a file:
 
 We’ve already used > and >> to throw data into a file but when we redirect like that we are catching it before it comes to the screen. There is another tool that is useful for catching data and also showing it to us, that is tee.
@@ -283,6 +323,12 @@ date | tee -a datefile
 ```
 
 Do a quick man on tee to see what the -a does. Try it without that value. Can you see any other useful options in there for tee?
+
+```text
+It's a short list of options, but you can use the --help parameter to
+display the help information.  Also for troubleshooting purposes you can
+set the mode with the --output-error= parameter.
+```
 
 #### Ignoring pesky errors or tossing out unwanted output:
 
@@ -383,15 +429,27 @@ The first character lets you know if the file is a directory, file, or link. In 
 `rwx`: For UID (me).
 
 - What permissions do I have?
+    - RWX means you have read, write, and execute permissions.
 
 `---`: For group.
 
 - Who are they?
+    - A user can belong to a group.
 - What can my group do?
+    - Based on the ---, they can't do anything
 
 `---`: For everyone else.
 
 - What can everyone else do?
+    - Same as the group.  The --- means they can't do anything.
 
 Go find some other interesting files or directories and see what you see there. Can you identify their characteristics and permissions?
 
+```text
+-rwxr-xr-x. 1 root root 191 Apr 16 22:54 testscript.sh
+
+For the file we created above, the Owner has read, write, execute
+permissions. The users belonging to the group root and everyone else
+only has read and execute permissions meaning they can't modify the
+file.
+```
