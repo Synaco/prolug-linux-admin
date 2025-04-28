@@ -28,6 +28,13 @@ Review the page: <https://attack.mitre.org/>
 - As a system administrator, more than likely you are charged with the responsibility of keeping the systems up and available. Knowing how the systems can fail and be attacked would help you in that goal regardless of whether there's a separate team in charge of security.
 
 3. What impact to the organization is data exfiltration? Even if you’re not a data owner or data custodian, why is it so important to understand the data on your systems?
+```text
+Data exfiltration has a huge impact on an organizaton. It leads to
+loss of reputation and ultimately financial loss for the company. It's
+important to understand the data on your systems so that you can add
+appropriate security controls in place and to better detect/respond to
+incidents when they do occur. 
+```
 
 #### Discussion Post #2
 
