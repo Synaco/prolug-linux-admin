@@ -46,8 +46,10 @@ incidents when they do occur.
 Find a blog or article on the web that discusses the user environment in Linux. You may want to search for .bashrc or (dot) environment files in Linux.
 
 1. What types of customizations might you setup for your environment? Why?
+- I would setup basic configurations for the tools that I use.  For example I have my .vimrc to add functionality and color to the text editor. It enhances the experience when using said tool/tools.
 
 2. What problems can you anticipate around helping users with their dot files?
+- Off the top of my head, everyone's different. The way one person would setup their dot files would be different from someone else. Someone elses environment may be setup completely different from my environment, so things may not work out of the box.
 
 ## Definitions
 
