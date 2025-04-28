@@ -137,7 +137,9 @@
  
 ```bash
 pvs # What system are we running if we have physical volumes?
+    # Answer: LVM
     # What other things can we tell with vgs and lvs?
+    # Answer: We can tell the size of the volume groups and logical volumes.
 ```
 
 - Use `pvdisply`, `vgdisplay`, and `lvdisplay` to look at your carved up volumes.  
@@ -145,15 +147,16 @@ pvs # What system are we running if we have physical volumes?
 - Try a command like `lvdisplay | egrep "Path|Size"` and see what it shows.
 
   - Does that output look useful?
+      - Yes, it shows only the path and sizes which is useful.
   - Try to `egrep` on some other values. Separate with `|` between search items.
 
 - Check some quick disk statistics
   ```bash
   iostat -d
   iostat -d 2   # Wait for a while, then use crtl + c to break. What did this do? Try changing this to a different number.
-  # This printed the disk io speeds every 2 seconds.
+  # Answer: This printed the disk io speeds every 2 seconds.
   iostat -d 2 5 # Don't break this, just wait. What did this do differently? Why might this be useful?
-  # This did the same thing as above but stopped after 5 outputs.
+  # Answer: This did the same thing as above but stopped after 5 outputs.
   ```
 
 3. Check the amount of RAM
@@ -173,13 +176,18 @@ pvs # What system are we running if we have physical volumes?
    ```bash
    cat /proc/cpuinfo
    ```
-   What type of processors do you have? Google to try to see when they were released.
+   What type of processors do you have? 
+       - Intel(R) Xeon(R) CPU E5-2665
+
+   Google to try to see when they were released.
+       - Released in March 2012
    Look at the flags. Sometimes when compiling these are important to know. This is how
    you check what execution flags your processor works with.
    ```bash
    cat /proc/cpuinfo | grep proc | wc -l
    ```
    - Does this command accurately count the processors?
+       - Yes
    - Check some quick processor statistics
 
 ```bash
@@ -188,7 +196,8 @@ iostat -c 2 # Wait for a while, then use Ctrl+C to break. What did this do? Try 
 iostat -c 2 5 # Don't break this, just wait. What did this do differently? Why might this be useful?
 ```
 
-Does this look familiar to what we did earlier with `iostat`?
+Does this look familiar to what we did earlier with `iostat`?    
+- Yes. But instead of io for disk it showed cpu stats.
 
 5. Check the system uptime
 
@@ -197,8 +206,11 @@ Does this look familiar to what we did earlier with `iostat`?
    man uptime
    ```
 
-   Read `man uptime` and figure out what those 3 numbers represent.  
+   Read `man uptime` and figure out what those 3 numbers represent.
+       - It shows load for the past 1, 5, 15 minutes.
+
    Referencing this server, do you think it is under high load? Why or why not?
+       - Not under heavy load because it returned 0 for all three.
 
 6. Check who has recently logged into the server and who is currently in
 
@@ -220,7 +232,7 @@ Does this look familiar to what we did earlier with `iostat`?
      whoami
      ```
      How many other users are on this system? What does the `pts/0` mean on Google?
-
+         - I was the last to login and no others are on the system.
 7. Check running processes and services
 
    ```bash
