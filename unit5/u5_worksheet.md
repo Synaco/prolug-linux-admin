@@ -55,15 +55,20 @@ Find a blog or article on the web that discusses the user environment in Linux. 
 
 ---
 
-Footprinting:
+Footprinting  
+- The initial gathering of information on a target/organization.
 
-Scanning:
+Scanning  
+- The act of probing a system or network for more information like open ports or running vulnerabilities.
 
-Enumeration:
+Enumeration  
+- Interacting or connecting to the system to gather more information. 
 
-System Hacking:
+System Hacking  
+- Getting unauthorized access to system(s).
 
-Escalation of Privilege:
+Escalation of Privilege  
+- Moving from a user with low privileges to a user with higher privileges on a system.
 
 Rule of least privilege:
 
