@@ -18,8 +18,14 @@ Hold your worksheets until the end to turn them in as a final submission packet.
 Review the page: <https://attack.mitre.org/>
 
 1. What terms and concepts are new to you?
+- Develop Capabilities
+- Obtain Capabilities
+- Stage Capabilities
+- BITS Jobs
+- Internal Spearphishing
 
 2. Why, as a system administrator and not directly in security, do you think it’s so important to understand how your systems can be attacked? Isn’t it someone else’s problem to think about that?
+- As a system administrator, more than likely you are charged with the responsibility of keeping the systems up and available. Knowing how the systems can fail and be attacked would help you in that goal regardless of whether there's a separate team in charge of security.
 
 3. What impact to the organization is data exfiltration? Even if you’re not a data owner or data custodian, why is it so important to understand the data on your systems?
 
