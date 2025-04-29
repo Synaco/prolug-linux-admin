@@ -70,11 +70,14 @@ System Hacking
 Escalation of Privilege  
 - Moving from a user with low privileges to a user with higher privileges on a system.
 
-Rule of least privilege:
+Rule of least privilege  
+- Giving the user or application the least amount of access necessary to accomplish their tasks.
 
-Covering Tracks:
+Covering Tracks  
+- The act of removing any sign that you were on a system when pen testing or hacking.
 
-Planting Backdoors:
+Planting Backdoors  
+- Backdoors are hidden vulnerabilites that serve as a point of entry to a system. Attackers plant backdoors usually to regain access to a system at a later date.
 
 ## Digging Deeper
 
@@ -94,4 +97,7 @@ Planting Backdoors:
 ---
 
 1. What questions do you still have about this week?
-2. How are you going to use what you’ve learned in your current role?
+- With the amount of way's an attacker can get in a system and the complexities of some of the systems, how long would it normally take for an organization to build a robust security team, routine, and policies?
+
+2. How are you going to use what you've learned in your current role?
+- Nothing at the moment, but I will keep reading about the mitre attacks on my spare time and think about ways that I can keep track of possible attack vectors.
