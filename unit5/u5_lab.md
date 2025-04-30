@@ -155,6 +155,11 @@ work
    ```
 
    What `UID` and `GID` were each of these given? Do they match up?
+   ```text
+   user1:x:1005:1005::/home/user1:/bin/bash
+   user3:x:1006:1006::/home/user3:/bin/bash
+   user2:x:1007:1007::/home/user2:/bin/bash
+   ```
    Verify your users all have home directories. Where would you check this?
 
    ```bash
@@ -366,15 +371,19 @@ The first character lets you know if the file is a directory, file, or link. In 
 `rwx`: For UID (me).
 
 - What permissions do I have?
+    - Read, Write, and Execute permissions.
 
 `---`: For group.
 
 - Who are they?
+    - Users belonging to a group.
 - What can my group do?
+    - Nothing.
 
 `---`: For everyone else.
 
 - What can everyone else do?
+    - Nothing.
 
 Go find some other interesting files or directories and see what you see there.  
 Can you identify their characteristics and permissions?
