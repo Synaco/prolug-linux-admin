@@ -25,12 +25,16 @@ Exercises (Warmup to quickly run through your system and practice commands)
    - We'll be examining the contents of this file later
 4. `cat /etc/passwd | tail -5`
    - What did this do to the output of the file?
+       - It printed the last 5 lines of the file.
 5. `cat /etc/passwd | tail -5 | nl`
 6. `cat /etc/passwd | tail -5 | awk -F : '{print $1, $3, $7}'`
    - What did that do and what do each of the `$#` represent?
+       - It took the last 5 lines of the file and printed the 1st, 3rd, and 7th columns only.
    - Can you give the 2nd, 5th, and 6th fields?
+       - cat /etc/passwd | tail -5 | awk -F : '{print $2, $5, $6}'
 7. `cat /etc/passwd | tail -5 | awk -F : '{print $NF}'`
    - What does this `$NF` mean? Why might this be useful to us as administrators?
+       - It's a variable in awk for the last field. It's use is to just print the last field of anything you feed it.
 8. `alias`
    - Look at the things you have aliased.
    - These come from defaults in your `.bashrc` file. We'll configure these later
@@ -44,6 +48,7 @@ Exercises (Warmup to quickly run through your system and practice commands)
 14. `ls`
 15. `unalias ls`
     - How did `ls` change on your screen?
+        - `ls` alias didn't exist so it didn't do anything different.
 
 No worries, there are two ways to fix the mess you've made.
 Nothing you've done is permanent, so logging out and reloading a shell (logging back in) would fix this.  
