@@ -111,6 +111,7 @@ how they secure the system. The four files are `/etc/passwd`, `/etc/group`, `/et
 `cat` or `more` the file to verify these are values you see.
 
 Are there always 7 fields?
+    - Typically, I would say yes unless someone manually misconfigures something. I ran the following command "cat /etc/passwd | awk -F ':' 'NF != 7' /etc/passwd | nl". Even if the column is empty it would show up as "::".
 
 3. Anatomy of the `/etc/group` file
    `/etc/group` is broken down like this, a `:` (colon) delimited file:
@@ -120,6 +121,7 @@ Are there always 7 fields?
    | `puppet`  | `x`      | `991`    | `foreman, foreman-proxy` |
 
    - `cat` or `more` the file to verify these are the values you see. Are there always 4 fields?
+   - Yes there are always 4 fields even though some fields may be empty. Used the following script to print out groups with non-empty column at the end: cat /etc/group | awk -F : '{if ($NF ~ /\S/) print}'
 
 4. We're not going to break down the `g` files, but there are a lot of resources online that
    can show you this same information.
