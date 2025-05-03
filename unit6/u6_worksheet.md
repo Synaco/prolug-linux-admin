@@ -69,6 +69,12 @@ WAF:
 
 NGFW:
 
+PKI: 
+
+Zero Trust: 
+
+
+
 ## Digging Deeper
 
 ---
