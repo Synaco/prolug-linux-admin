@@ -1,12 +1,4 @@
-<div class="flex-container">
-        <img src="https://github.com/ProfessionalLinuxUsersGroup/img/blob/main/Assets/Logos/ProLUG_Round_Transparent_LOGO.png?raw=true" width="64" height="64">
-    <p>
-        <h1>Unit 6 Lab - Firewalls</h1>
-    </p>
-</div>
-
-> If you are unable to finish the lab in the ProLUG lab environment we ask you `reboot`
-> the machine from the command line so that other students will have the intended environment.
+# Unit 6 Lab
 
 ### Resources / Important Links
 
@@ -19,13 +11,6 @@
 - Rocky 9.4+ - ProLUG Lab
   - Or comparable Linux box
 - root or sudo command access
-
-#### Downloads
-
-The lab has been provided for convenience below:
-
-- <a href="./assets/downloads/u6/u6_lab.pdf" target="_blank" download>📥 u6_lab(`.pdf`)</a>
-- <a href="./assets/downloads/u6/u6_lab.docx" target="_blank" download>📥 u6_lab(`.docx`)</a>
 
 ## Pre-Lab Warm-Up
 
@@ -58,7 +43,7 @@ We just put the aliases back.
 17. `ls`
     - Think about some of those commands and when you might use them. Try to change command #15 to remove all of those files (rm -rf file$i)
 
-## Lab 🧪
+## Lab
 
 ---
 
@@ -503,4 +488,3 @@ So now take this and set up some firewalls on the interfaces of your system.
 Change the default ports and services assigned to your different zones (at least 3 zones)
 Read the `man firewall-cmd` command or `firewall-cmd -help` to see if there are any other userful things you should know.
 
-> Be sure to `reboot` the lab machine from the command line when you are done.
