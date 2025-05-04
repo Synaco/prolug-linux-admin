@@ -51,7 +51,8 @@ Scenario:
 
 ---
 
-Firewall:
+Firewall  
+ - A security system that monitors and controls incoming and outgoing traffic on a network/system based on configurable security rules.
 
 Zone:
 
