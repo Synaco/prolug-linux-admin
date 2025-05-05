@@ -22,11 +22,11 @@ Scenario:
 > issue, but they have no data. You jump on the new servers and find that your engineer built everything
 > correctly and the agents for node_exporter, ceph_exporter and logstash exporter that your teams use. But,
 > they also have adhered to the new company standard of firewalld must be running. No one has documented the
-> ports that need to be open, so you’re stuck between the new standards and fixing this problem on live systems.
+> ports that need to be open, so you're stuck between the new standards and fixing this problem on live systems.
 
 Next, answer these questions here:
 
-1. As you’re looking this up, what terms and concepts are new to you?
+1. As you're looking this up, what terms and concepts are new to you?
 
 2. What are the ports that you need to expose? How did you find the answer?
 
@@ -37,7 +37,7 @@ Next, answer these questions here:
 Scenario:
 > A manager heard you were the one that saved the new application by fixing the firewall. They get your manager
 > to approach you with a request to review some documentation from a vendor that is pushing them hard to run a
-> WAF in front of their web application. You are “the firewall” guy now, and they’re asking you to give them a
+> WAF in front of their web application. You are “the firewall” guy now, and they're asking you to give them a
 > review of the differences between the firewalls you set up (which they think should be enough to protect them)
 > and what a WAF is doing.
 
@@ -81,7 +81,7 @@ Zero Trust:
 ---
 
 1. Read <https://docs.rockylinux.org/zh/guides/security/firewalld-beginners/>  
-   What new things did you learn that you didn’t learn in the lab?  
+   What new things did you learn that you didn't learn in the lab?  
    What functionality of firewalld are you likely to use in your professional work?
 
 ## Reflection Questions
@@ -89,4 +89,4 @@ Zero Trust:
 ---
 
 1. What questions do you still have about this week?
-2. How are you going to use what you’ve learned in your current role?
+2. How are you going to use what you've learned in your current role?
