@@ -27,8 +27,13 @@ Scenario:
 Next, answer these questions here:
 
 1. As you're looking this up, what terms and concepts are new to you?
+- Collectors
+- High Cardinality
+- Ceph Cluster
 
 2. What are the ports that you need to expose? How did you find the answer?
+- node_exporter: 9100
+- ceph_exporter: 9128
 
 3. What are you going to do to fix this on your firewall?
 
