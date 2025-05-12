@@ -30,12 +30,21 @@ Next, answer these questions here:
 - Collectors
 - High Cardinality
 - Ceph Cluster
+- Helm
+- Grok
 
 2. What are the ports that you need to expose? How did you find the answer?
+
+Used google and got the following:
 - node_exporter: 9100
 - ceph_exporter: 9128
+- logstash_exporter: 9198
+
 
 3. What are you going to do to fix this on your firewall?
+
+
+
 
 #### Discussion Post #2
 
