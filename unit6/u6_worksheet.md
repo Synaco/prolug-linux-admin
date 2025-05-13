@@ -71,8 +71,16 @@ Scenario:
 > and what a WAF is doing.
 
 1. What do you know about the differences now?
+```text
+To my understanding, firewalld and others like it work at layer 3 of the
+OSI model (network layer) filtering IP Addresses and Ports while WAFs
+work at layer 7 which allows you to filter at that level (although I'm
+not sure what that data is or would look like).
+```
 
 2. What are you going to do to figure out more?
+
+For now I'll read up on articles like [Layer 3 vs. Layer 7 Firewalls](https://www.paloaltonetworks.com/cyberpedia/layer-3-vs-layer-7-firewall) to understand the differences. Also, I'll look into how I can set one of these up myself to test and get more of a practical usage and understanding.  I see that `OpenAppSec` can be installed with nginx may be something to look into as a homelab project [OpenAppSec](https://docs.openappsec.io/what-is-open-appsec).
 
 3. Prepare a report for them comparing it to the firewall you did in the first discussion.
 
