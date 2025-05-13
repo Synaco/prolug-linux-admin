@@ -71,12 +71,8 @@ Scenario:
 > and what a WAF is doing.
 
 1. What do you know about the differences now?
-```text
-To my understanding, firewalld and others like it work at layer 3 of the
-OSI model (network layer) filtering IP Addresses and Ports while WAFs
-work at layer 7 which allows you to filter at that level (although I'm
-not sure what that data is or would look like).
-```
+
+To my understanding, firewalld and others like it work at layer 3 of the OSI model (network layer) filtering IP Addresses and Ports while WAFs work at layer 7 which allows you to filter at that level (although I'm not sure what that data is or would look like).
 
 2. What are you going to do to figure out more?
 
