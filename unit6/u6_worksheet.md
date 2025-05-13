@@ -80,6 +80,13 @@ For now I'll read up on articles like [Layer 3 vs. Layer 7 Firewalls](https://ww
 
 3. Prepare a report for them comparing it to the firewall you did in the first discussion.
 
+**Firewalld**  
+It's a host-based firewall that filter's traffic originating from the server or destined for the server. It can filter traffic by IP Address, Port, Services, and interfaces but can't filter based on the specific layer 7 application data.
+
+**WAF (Web Application Firewall)**
+Firewall that filters based on the data at the application layer. This would give us futher control to what we allow access to our hosted web applications. Typically we install this either on our web application servers or in front of them. We would want to implement one of these to better secure our web based applications that are being hosted.
+
+
 ## Definitions
 
 ---
