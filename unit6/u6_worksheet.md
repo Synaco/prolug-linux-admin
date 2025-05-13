@@ -43,7 +43,22 @@ Used google and got the following:
 
 3. What are you going to do to fix this on your firewall?
 
+I would allow the ports through running the commands below and document
+the changes (if there's a specific zone I'd add the `--zone <name>`):
 
+```bash
+firewall-cmd --add-port=9100/tcp
+firewall-cmd --add-port=9128/tcp
+firewall-cmd --add-port=9198/tcp
+firewall-cmd --runtime-to-permanent
+```
+
+On a separate note, I also found these options for the service names versus the port:
+
+```bash
+firewall-cmd --add-service=prometheus-node-exporter
+firewall-cmd --add-service=ceph-exporter
+```
 
 
 #### Discussion Post #2
