@@ -79,10 +79,14 @@ Scenario:
 > This is a thought exercise, so it’s not a “right or wrong” answer it’s for you to think about.
 
 1. What is the concept of software bloat, and how do you think it relates?
+I think of software bloat as software installed in a system that aren't used or don't need to be on a system that are. An engineer may forgo "group install" in order to be more meticulous and only install packages that absolutely need to exist on the system.
 
 2. What is the concept of a security baseline, and how do you think it relates?
+I think of security baseline as a template of standards that every server adhere's to. As part of the security baseline, you may have a set of packages on specific versions installed on all servers and avoid software bloat on principle.
 
 3. How do you think something like this affects performance baselines?
+It helps establish a consistent trend amongst the servers you administer. If something deviates, it's a lot easier to tell if all server are running the same packages/software. 
+
 
 ## Definitions
 
