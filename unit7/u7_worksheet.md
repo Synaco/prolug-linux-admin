@@ -17,7 +17,13 @@ Hold your worksheets until the end to turn them in as a final submission packet.
 
 1. Why is software versioning so important to software security?
 
+When vulnerabilities are found, it's one of the ways to specify what version of the software had it and what version patched the vulnerability.
+
 2. Can you find 3 reasons, from the internet, AI, or your peers?
+ * Allows vulnerability scanners to detect insecure versions.
+ * Allows secure rollback to a known-good version before a vulnerability or flaw was introduced.
+ * Allows specific versions to be tested or analyzed for forensic purposes.
+
 
 #### Discussion Post #2
 
@@ -35,10 +41,34 @@ Scenario:
 > This is an urgent task and your manager is hovering.
 
 1. How can you check all the repos on your system to see which are active?
-
+```bash
+dnf reposlist enabled
+```
 2. How would you check another server to see if the software was installed there?
+I would ssh into the server and then check if the software installed by running the following command:
+
+```bash
+rpm -qa <package name>
+```
+
+Example:
+```bash
+rpm -qa openssh
+```
 
 3. If you find the software, how might you figure out when it was installed? (Time/Date)
+I would run the following command:
+
+```bash
+rpm -qi <package name>
+```
+
+Example:
+```bash
+rpm -qi openssh
+```
+
+
 
 #### Discussion Post #3
 
