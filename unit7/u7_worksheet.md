@@ -88,7 +88,7 @@ I think of security baseline as a template of standards that every server adhere
 
 3. How do you think something like this affects performance baselines?
 
-It helps establish a consistent trend amongst the servers you administer. If something deviates, it's a lot easier to tell if all server are running the same packages/software. 
+It helps establish a consistent trend amongst the servers you administer. If something deviates, it's a lot easier to tell if all servers are running the same packages/software. 
 
 
 ## Definitions
