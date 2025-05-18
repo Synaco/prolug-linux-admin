@@ -142,7 +142,7 @@ public
 Next Command
 
 ```bash
-firewall-cmd --get-active
+firewall-cmd --get-active-zones
 ```
 
 Example Output:
