@@ -94,25 +94,35 @@ Firewall that filters based on the data at the application layer. This would giv
 Firewall  
  - A security system that monitors and controls incoming and outgoing traffic on a network/system based on configurable security rules.
 
-Zone:
+Zone  
+ - The trust level for a connection, interface or source address binding
 
-Service:
+Service  
+ - An application running in the background that serves some type of functionality.
 
-DMZ:
+DMZ  
+ - A subnetwork that separates an orgs internal network from untrusted external networks but provides access to certain services to users on the external network.
 
-Proxy:
+Proxy  
+ - A server that sends traffic on behalf of another which provides some security benefits.
 
-Stateful packet filtering:
+Stateful packet filtering  
+ - Analysis of the state of a process/connection as well as it's context.
 
-Stateless packet filtering:
+Stateless packet filtering  
+ - Opposite of stateful, analysing the packet headers but doesn't keep track of the state or the history of the connection (context).
 
-WAF:
+WAF  
+ - Web Application Firewall that can monitor/filter http traffic between web applications and the internet.
 
-NGFW:
+NGFW  
+ - Next-Generation Firewall are newer firewalls that do the functions of traditional firewalls but perform deeper inspection by doing things like checking packet payloads and matching signatures for harmful attacks/malware. NGFW include IPS and Application control which typical firewalls do not.
 
-PKI: 
+PKI  
+ - Public Key Infrastructure.  It's a system that manages digital certificates and public-key encryption to secure and authenticate communications digitally. 
 
-Zero Trust: 
+Zero Trust  
+ - A security model that requires strict identity verification for every user and device attempting to access a resource regardless of whether they're inside or outside the network. "Never Trust, Always Verify".
 
 
 
@@ -129,4 +139,7 @@ Zero Trust:
 ---
 
 1. What questions do you still have about this week?
+- Nothing at the moment.  Still processing a lot of the information.
+
 2. How are you going to use what you've learned in your current role?
+- Nothing at the moment, most of the systems I work with currently are windows systems. I do intend to setup a WAF in the homelab once I have more time to test how it works in application (instead of in theory).
