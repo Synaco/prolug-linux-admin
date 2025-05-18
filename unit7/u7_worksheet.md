@@ -2,8 +2,6 @@
 
 ## Instructions
 
----
-
 Fill out the worksheet as you progress through the lab and discussions.
 Hold your worksheets until the end to turn them in as a final submission packet.
 
@@ -93,32 +91,35 @@ It helps establish a consistent trend amongst the servers you administer. If som
 
 ## Definitions
 
----
+Yum  
+- Package Manager tool used on Redhat based Linux distros. I believe most use dnf now versus yum.
 
-Yum:
+DNF  
+- A replacemnt package management for yum on Redhat based Linux distros.
 
-DNF:
+Repo  
+- A centralized location where data for an applications source code and relevent files are stored.
 
-Repo:
+GPG Key  
+- A tool used to encrypt and sign messages or data with public and private keys.
 
-GPG Key:
+Software dependency  
+- When a program relies on one or more other programs to run.
 
-Software dependency:
+Software version  
+- A number given to the unique state of the software.
 
-Software version:
-
-Semantic Version:
+Semantic Version  
+- A methodology for assigning version numbers to the software.
 
 ## Digging Deeper
-
----
 
 1.  What is semantic versioning? <https://semver.org/>
 
 ## Reflection Questions
 
----
-
 1. What questions do you still have about this week?
+- Taking all the information in still. The question I have is who decides what versioning system that will be used typically? Do most just use semantic versioning?  
 
 2. How does security as a system administrator differ from what you expected?
+- Initially I just though of securing a system by making sure that firewalls are in place and you don't allow traffic through but I'm understanding that there's a lot more to it. There's a lot more layers to security then what I previously thought.
