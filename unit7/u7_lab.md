@@ -44,14 +44,22 @@ rpm -qa | grep -i imagemagick
 
 dnf install imagemagick
 
+# No match for argument: imagemagick
+#   * Maybe you meant: ImageMagick
+# Error: Unable to find a match: imagemagick
+
 # What is the error here? Read it
 dnf install ImageMagick
 
 # What are some of the dependencies here? Look up the urw-base35
 # and see what functionality that adds.
+# Some Dependencies: libx11, isocodes, imath
+# urw-base35 seem to be font substitutes.
+
 rpm -qa | grep -i imagemagick
 
 # Why did this work when the other one didn’t with dnf?
+# I believe it was because it was case sensitive.
 ```
 
 #### Math Practice:
