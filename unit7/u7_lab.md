@@ -82,11 +82,15 @@ for i in 'seq 1 5'; do free | grep -i mem | awk '{print $3}'; done
 echo "(79 + 79 + 80 + 80 + 45) / 5" | bc
 
 # Your numbers will vary. Is this effective? Is it precise enough?
+# It's used free memory space on the system.
 echo "(79 + 79 + 80 + 80 + 45) / 5" | bc -l
 # Is this precise enough for you?
+# I would say so.
 
 # Read the man to see what the -l option does to bc
 man bc
+
+# -l defines the math library.
 ```
 
 It would be astute to point out that I did not have you do bash arithmetic. There
