@@ -34,7 +34,7 @@ Scenario:
 - Only reason I can think of is if you have some policy saying that the log files need to exist for a certain period of time on the server. But since the logs are being sent of to splunk, I'm not really sure.
 
 4. For 2,3 if you are ok with that, explain your answer. (This isn’t a trick, maybe there is a valid reason.)
-- I would be ok with 3, assuming there's no policy in place strictly forbidding it. The logs are being sent to splunk, so I wouldn't be have to worry about keeping the logs on the server.
+- I would be ok with 3, assuming there's no policy in place strictly forbidding it. The logs are being sent to splunk, so I wouldn't have to worry about keeping the logs on the server.
 
 #### Discussion Post #2
 
