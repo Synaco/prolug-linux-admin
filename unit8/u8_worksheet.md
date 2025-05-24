@@ -28,10 +28,13 @@ Scenario:
 1. What resources helped you answer this?
 
 2. Why can’t you just make a design fix and add space in /var/log on all these systems?
+- Adding more space may only temporarily fix the problem. The amount of traffic to the webservers could increase even more making the log files bigger to the point that the issue happens again.
 
 3. Why can’t you just make a design change and logrotate more often so this doesn’t happen?
+- Only reason I can think of is if you have some policy saying that the log files need to exist for a certain period of time on the server. But since the logs are being sent of to splunk, I'm not really sure.
 
 4. For 2,3 if you are ok with that, explain your answer. (This isn’t a trick, maybe there is a valid reason.)
+- I would be ok with 3, assuming there's no policy in place strictly forbidding it. The logs are being sent to splunk, so I wouldn't be have to worry about keeping the logs on the server.
 
 #### Discussion Post #2
 
