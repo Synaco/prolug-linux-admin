@@ -56,15 +56,6 @@ Scenario:
 2. The developer tells you that he’s pulling a local image. Do you find this to be
    true, or is something else happening in their `run` command?
 
-<div class="warning">
-Submit your input by following the link below.
-
-The discussion posts are done in Discord threads. Click the 'Threads' icon on the top right and search for the discussion post.
-
-</div>
-
-- [Link to Discussion Posts](https://discord.com/channels/611027490848374811/1365776270800977962)
-
 ## Definitions
 
 ---
@@ -87,8 +78,6 @@ Repository:
 
 ## Digging Deeper
 
----
-
 1. Find a blog on deployment of some service or application in a container that interests you.  
    See if you can get the deployment working in the lab.
 
@@ -99,8 +88,6 @@ Repository:
 2. Run this scenario and play with K3s: <https://killercoda.com/k3s/scenario/intro>
 
 ## Reflection Questions
-
----
 
 1. What questions do you still have about this week?
 
